@@ -14,7 +14,7 @@ func TestSlog(t *testing.T) {
 	// 日志格式以 key=val 方式输出，key 这个字段一定是字符串。
 	val1, val2 := "val1", "val2"
 	slog.Info("info log", "key1", val1, "key2", val2)
-	// 2023/09/23 22:18:02 INFO msg  key=val
+	// 2023/09/23 22:18:02 INFO msg key=val
 	stu := struct {
 		a string
 		b int
